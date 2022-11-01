@@ -17,16 +17,55 @@ body{
     /* color: #fff; */
 }
 
-h1 {
-    font-size: 3rem;
-    font-weight: normal;
-    margin-top: 14rem;
+
+@media only screen and (max-width: 400px) {
+
+    body {
+        background-image: url("./snow.jpg");
+        background-size: auto 650px;
+    }
+    .big-text {
+        font-size: 1.4rem !important;
+    }
+    .countdown-el span{
+        font-size: 0.8rem !important;
+    }
+    .countdown_container {
+        position: absolute;
+        top: 300px;
+    }
 }
+  
+@media only screen and (min-width: 400px) {
+    .big-text {
+        font-size: 2rem !important;
+  }
+} 
+
+@media only screen and (min-width: 500px) {
+    .big-text {
+        font-size: 3rem !important;
+  }
+} 
+
+@media only screen and (min-width: 992px) {
+    .big-text {
+        font-size: 6rem !important;
+    }
+} 
+  
+@media only screen and (min-width: 1200px) {
+    .big-text {
+        font-size: 7rem !important;
+  }
+} 
 
 .countdown_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 .big-text {
